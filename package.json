@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel ./src -d lib",
+    "prepublish": "npm run build",
     "gh-pages": "gulp publish:examples",
     "lint": "eslint src examples/src",
     "start": "gulp dev",
